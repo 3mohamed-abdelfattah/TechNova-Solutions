@@ -1,0 +1,33 @@
+.project-highlight {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive grid layout */
+@media (min-width: 768px) {
+    .project-card {
+        flex: 1 1 calc(33.333% - 2rem);
+    }
+}

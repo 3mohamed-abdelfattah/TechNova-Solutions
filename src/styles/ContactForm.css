@@ -1,0 +1,33 @@
+.contact-form {
+    padding: 2rem;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form button {
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e14d2c;
+}

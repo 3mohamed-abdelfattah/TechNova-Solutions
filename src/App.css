@@ -1,0 +1,51 @@
+/* Main app styling */
+.App {
+  font-family: Arial, sans-serif;
+  color: #1A1A1A;
+}
+
+/* Section headings */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Breakpoints for different screen sizes */
+@media (max-width: 768px) {
+
+  /* Tablet width - reduce padding */
+  .App {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Mobile width - adjust heading font size */
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .service,
+  .project-card,
+  .contact-form form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-title {
+    margin-bottom: 1rem;
+  }
+}
