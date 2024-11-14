@@ -7,10 +7,24 @@ function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!name || !email) {
+
+        const trimmedName = name.trim();
+        const trimmedEmail = email.trim();
+
+        // Email format validation 
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!trimmedName || !trimmedEmail) {
             alert('Please fill in all fields');
+        } else if (trimmedName.length < 3) {
+            alert('Name must be at least 2 characters long');
+        } else if (!emailRegex.test(trimmedEmail)) {
+            alert('Please enter a valid email address');
         } else {
             alert('Form submitted!');
+            // reset form submission.
+            setName('');
+            setEmail('');
         }
     };
 

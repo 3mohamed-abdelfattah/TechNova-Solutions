@@ -1,5 +1,4 @@
 .services-section {
-    background-color: #F5F5F5;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -19,5 +18,6 @@
     .services-section {
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
     }
 }
