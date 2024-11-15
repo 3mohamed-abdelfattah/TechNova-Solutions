@@ -109,3 +109,4 @@ This project is fully responsive, ensuring compatibility with various screen siz
 This project is licensed under the MIT License.
 
 ---
+This project is custom-designed as a part of a freelance contract
